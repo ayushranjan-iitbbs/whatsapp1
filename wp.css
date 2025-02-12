@@ -88,11 +88,26 @@ button:hover {
 
 .login {
     background-color: #ccc;
+     
 }
 
 .download {
     background-color: #25D366;
     color: white;
+    
+}
+.login1 {
+    background-color: #ccc;
+    padding:15px;
+    font-size: 25px;
+    margin-right:1rem;
+}
+
+.download1 {
+    background-color: #25D366;
+    color: white;
+    padding:15px;
+    font-size: 20px;
 }
 
 .wfw {
