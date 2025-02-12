@@ -1,0 +1,407 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Quicksand", sans-serif;
+    background-color: #ECE5DD;
+    overflow-x: hidden;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #f8f9fa;
+    padding: 15px 20px;
+    margin-bottom: 2rem;
+    width: 100%;
+    position: relative;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    flex-grow: 3;
+}
+
+.logo img {
+    width: 120px; 
+    height: auto;
+}
+
+.nav-links {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+ul li {
+    cursor: pointer;
+    font-size: 16px;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+li:hover {
+    border-bottom: 3px solid #25D366;
+}
+
+.buttons {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+button {
+    padding: 8px 15px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 14px;
+    box-shadow: 0px 0px 5px #128C7E;
+}
+
+button:hover {
+    color: #ECE5DD;
+    box-shadow: 0px 0px 5px #000;
+    background-color: #d0f3ef;
+}
+
+.login {
+    background-color: #ccc;
+}
+
+.download {
+    background-color: #25D366;
+    color: white;
+}
+
+.wfw {
+    background-color: #007bff;
+    color: white;
+}
+
+.menu-toggle {
+    font-size: 28px;
+    cursor: pointer;
+    display: none;
+}
+
+.line1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 20px;
+    flex-wrap: wrap;
+    width: 100%;
+    overflow: hidden;
+}
+
+.content-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.written {
+    margin-top: 3rem;
+    margin-left: 4rem;
+    max-width: 600px;
+    font-size: 6rem;
+    font-weight: 200;
+    line-height: 1.2;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.img2 {
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    border-radius: 1rem;
+    box-shadow: 0px 0px 15px #128C7E;
+}
+
+.underline {
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+}
+
+.underline::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 4px;
+    background-color: #128C7E;
+    transition: width 0.5s ease-in-out;
+}
+
+.chat::after {
+    animation: underlineAnim 0.5s forwards;
+}
+
+.connect::after {
+    animation: underlineAnim 0.5s forwards 1s;
+}
+
+.build::after {
+    animation: underlineAnim 0.5s forwards 2s;
+}
+
+@keyframes underlineAnim {
+    from { width: 0; }
+    to { width: 100%; }
+}
+
+.additional-buttons {
+    display: flex;
+    gap: 10px;
+    margin-top: 2rem;
+    margin-left: 4rem;
+    margin-bottom: 2rem;
+}
+
+.p1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 8rem;
+    font-weight: 400;
+    margin-top: 12rem;
+}
+
+.p2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    font-weight: 400;
+    margin-top: 5rem;
+    text-align: center;
+}
+
+.latest-news-container {
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 20px;
+}
+
+.latest-news-container h2 {
+    color: #128C7E;
+    margin-bottom: 20px;
+    font-size: 2.5rem;
+    text-align: center;
+}
+
+.news-cards {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.news-card {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: calc(33.33% - 20px);
+    transition: transform 0.3s ease;
+    cursor:pointer;
+}
+
+.news-card:hover {
+    transform: translateY(-5px);
+}
+
+.news-card h3 {
+    color: #128C7E;
+    margin-bottom: 10px;
+    font-size: 1.2rem;
+}
+
+.news-card p {
+    color: #333;
+    font-size: 1rem;
+}
+
+.footer {
+    background-color: #128C7E;
+    color: #ffffff;
+    padding: 40px 20px;
+    margin-top: 4rem;
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-logo img {
+    height: 40px;
+    width: auto;
+}
+
+.footer-links ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.footer-links a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 14px;
+    transition: opacity 0.3s ease;
+}
+
+.footer-links a:hover {
+    opacity: 0.7;
+}
+
+.footer-bottom {
+    margin-top: 30px;
+    text-align: center;
+    font-size: 12px;
+}
+
+@media (max-width: 976px) {
+    .menu-toggle {
+        display: block;
+    }
+
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        background: white;
+        text-align: center;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    .nav-links li:hover {
+        background-color: #128C7E;
+        color: white;
+    }
+
+    .nav-links ul {
+        flex-direction: column;
+        gap: 15px;
+        padding: 20px 0;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .buttons {
+        display: none;
+    }
+
+    .p1 {
+        font-size: 6rem;
+        margin-top: 4rem;
+    }
+
+    .p2 {
+        font-size: 1.5rem;
+        margin-top: 3rem;
+    }
+
+    .news-card {
+        width: calc(50% - 10px);
+    }
+}
+
+@media (max-width: 768px) {
+    .line1 {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .content-wrapper {
+        align-items: center;
+    }
+
+    .written {
+        font-size: 4rem;
+        margin-left: 0;
+        margin-right: 0;
+        margin-top: 2rem;
+        white-space: normal;
+        overflow: visible;
+        text-overflow: clip;
+    }
+
+    .additional-buttons {
+        margin-left: 0;
+    }
+
+    .img2 {
+        margin-top: 2rem;
+    }
+
+    .p1 {
+        font-size: 4rem;
+        margin-top: 4rem;
+    }
+
+    .p2 {
+        font-size: 1.2rem;
+        margin-top: 2rem;
+    }
+
+    .news-card {
+        width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .written {
+        font-size: 3rem;
+    }
+
+    .p1 {
+        font-size: 3rem;
+    }
+
+    .p2 {
+        font-size: 1rem;
+    }
+
+    .additional-buttons {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .additional-buttons button {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+}
