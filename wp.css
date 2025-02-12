@@ -19,6 +19,8 @@ body {
     margin-bottom: 2rem;
     width: 100%;
     position: relative;
+    z-index: 1000;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 .logo {
@@ -48,6 +50,7 @@ ul {
 ul li {
     cursor: pointer;
     font-size: 16px;
+    transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 a {
@@ -56,7 +59,10 @@ a {
 }
 
 li:hover {
-    border-bottom: 3px solid #25D366;
+    background-color: #128C7E; 
+    color: white; 
+    border-radius: 5px; 
+    padding: 5px; 
 }
 
 .buttons {
@@ -99,7 +105,10 @@ button:hover {
     cursor: pointer;
     display: none;
 }
-
+.menu-toggle ul li:hover{
+    background-color: #128C7E;
+    color:white;
+}
 .line1 {
     display: flex;
     justify-content: space-between;
@@ -114,6 +123,8 @@ button:hover {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+    position: relative;
+    z-index: 1;
 }
 
 .written {
@@ -176,7 +187,6 @@ button:hover {
     margin-left: 4rem;
     margin-bottom: 2rem;
 }
-
 .p1 {
     display: flex;
     justify-content: center;
@@ -286,7 +296,6 @@ button:hover {
     text-align: center;
     font-size: 12px;
 }
-
 @media (max-width: 976px) {
     .menu-toggle {
         display: block;
