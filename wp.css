@@ -59,10 +59,7 @@ a {
 }
 
 li:hover {
-    background-color: #128C7E; 
-    color: white; 
-    border-radius: 5px; 
-    padding: 5px; 
+    border-bottom: 3px solid #25D366;
 }
 
 .buttons {
@@ -120,10 +117,7 @@ button:hover {
     cursor: pointer;
     display: none;
 }
-.menu-toggle ul li:hover{
-    background-color: #128C7E;
-    color:white;
-}
+ 
 .line1 {
     display: flex;
     justify-content: space-between;
@@ -328,7 +322,7 @@ button:hover {
         box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     }
 
-    .nav-links li:hover {
+    .nav-links ul li:hover {
         background-color: #128C7E;
         color: white;
     }
